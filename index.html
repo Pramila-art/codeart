@@ -1,0 +1,434 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		
+		<script>
+						
+		    function validateForm() {
+		    var x = document.forms["myForm"]["email"].value;
+		    if (x == "") {
+				alert("Please Enter the Email");
+				return false;
+		    }else{alert("“Subscribed successfully”");}
+			}
+	
+		</script>
+		
+	<style>
+		body {
+			font-family: arial;
+		}
+		/* CSS for background image */
+		.bg-img {
+			/* The image used */
+			background-image: url("bg-img.jpg");
+			min-height: 500px;
+			/* Center and scale the image nicely */
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			
+			/* Needed to position the navbar */
+				position: relative;
+			}
+			
+			.imgtext{
+				position: absolute;
+			    top: 50%;
+			    left: 30%;
+			    color:white;
+			    font-size:35px;
+				
+				opacity: 100;
+				animation-name: topFadeOut;
+				animation-duration: 3s;
+			}
+		
+			@keyframes topFadeOut {
+				0% {
+					position: absolute;
+					top: -3rem;
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+		
+			/*CSS for logo*/
+			.logo{
+					position: absolute;
+				}
+			/* CSS for navbar */
+		
+			.topnav {
+			   overflow: hidden;
+			   background-color: none;
+			   float:none;
+			}
+			
+			.topnav a {
+			   float: left;
+			   display: inline-block;
+			   color: #f2f2f2;
+			   text-align: right;
+			   padding: 16px 24px;
+			   text-decoration: none;
+			   font-size: 16px;
+			}
+
+			.topnav a:hover {
+			   background-color: #666;
+			   color: white;font-size: 17px;
+			}
+
+			.topnav .icon {
+			   display: none;
+			}
+
+			@media screen and (max-width: 600px) {
+			  .topnav a:not(:last-child) {display: none;}
+			  .topnav a.icon {
+				float: right;
+				display: block;
+			  }
+			}
+
+			@media screen and (max-width: 600px) {
+			  .topnav.responsive {position: relative;}
+			  .topnav.responsive .icon {
+				position: absolute;
+				right: 0;
+				top: 0;
+			  }
+			  .topnav.responsive a {
+				float: none;
+				display: block;
+				text-align: left;
+			  }
+			  
+			  .imgtext{
+				  position: absolute;
+				  top: 50%;
+				  left: 10%;
+				  color:white;
+				  font-size:25px;
+				}
+			}
+			  
+			  
+		/* CSS for Service Section*/ 
+		section .section-title{
+			text-align:center;
+			color:#000;
+			margin-bottom:40px;
+			text-transform:uppercase;
+		}
+		
+		#what-we-do .card{
+			padding: 1rem!important;
+			/*border: 1px solid black;*/
+			margin-bottom:1rem;
+		}
+		
+		#what-we-do .card:hover{
+			box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+			
+		}
+		
+		#what-we-do .card .card-block{
+			padding-left: 30px;
+			position: relative;
+		}
+		
+		#what-we-do .card .card-block a{
+			font-weight:700;
+			text-decoration:none;
+		}
+		
+		#what-we-do .card .card-block a i{
+			display:none;
+			
+		}
+		#what-we-do .card:hover .card-block a i{
+			display:inline-block;
+			font-weight:700;
+			
+			
+		}
+		/*CSS for Our Team Section*/
+
+		.our-webcoderskull .cnt-block:hover {
+			box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+			border: 0;
+		}
+		
+		.our-webcoderskull .cnt-block{ 
+		   float:left; 
+		   width:100%; 
+		   background:#fff; 
+		   padding:30px 20px; 
+		   text-align:center; 
+		   border:2px solid #d5d5d5;
+		   margin: 0 0 28px;
+		}
+		.our-webcoderskull .cnt-block figure{
+		   width:148px; 
+		   height:148px; 
+		   border-radius:100%; 
+		   display:inline-block;
+		   margin-bottom: 15px;
+		}
+		.our-webcoderskull .cnt-block img{ 
+		   width:148px; 
+		   height:148px; 
+		   border-radius:100%; 
+		}
+		.our-webcoderskull .cnt-block h3{ 
+		   color:#2a2a2a; 
+		   font-size:20px; 
+		   font-weight:500; 
+		   padding:6px 0;
+		   text-transform:uppercase;
+		}
+		.our-webcoderskull .cnt-block h3 a{
+		  text-decoration:none;
+			color:#2a2a2a;
+		}
+		.our-webcoderskull .cnt-block h3 a:hover{
+			color:#337ab7;
+		}
+		.our-webcoderskull .cnt-block p{ 
+		   color:#2a2a2a; 
+		   font-size:13px; 
+		   line-height:20px; 
+		   font-weight:600;
+		}
+
+		/* Style the active class*/
+		.active, .btn:hover {
+		color: white;border-bottom: 2px solid white;
+		}
+		
+		@media screen and (max-width: 600px) {
+			#subscribe_btn{
+				margin-top: 15px;
+				
+			}
+		}	
+	</style>
+	</head>
+	<body>
+		<section id="home">
+			<div class="bg-img">
+				<div class="imgtext">Welcome to Solutions That Meets Your Needs..</div>
+				<div class="container-fixed">
+				<div class="col-lg-1 col-md-1 col-sm-1">
+						
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-2">
+						<img src="logo1-removebg-preview-removebg-preview.png" class="logo" height="100px" style="margin-top:10px;">
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3">
+						
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6">	
+						<div class="topnav" id="myTopnav">
+							<a href="#home" class="nav">HOME</a>
+							<a href="#what-we-do" class="nav">SERVICES</a>
+							<a href="#team" class="nav">TEAM</a>
+							<a href="#blog" class="nav">BLOGS</a>
+							<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+								<i class="fa fa-bars"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+	    </section><br><br>
+	
+	
+<!-- Services section -->
+    <section id="what-we-do" style="background-color:#F8F8F8">
+    	<div class="container">
+			<h2 class="section-title">SERVICES</h2>
+			<div class="row mt-5">
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+					<div class="card">
+						<div class="card-block block-1">
+							<h4 class="card-title">SERVICE TITLE 1</h4><br>
+							<p class="card-text">With supporting text below as a natural lead-in to additional content.
+								With supporting text below as a natural lead-in to additional content.
+								With supporting text below as a natural lead-in to additional content.
+								With supporting text below as a natural lead-in to additional content.
+							</p>
+							<a href="#" title="Read more" class="read-more" >Read more<i class="fa fa-angle-double-right ml-2"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+					<div class="card">
+						<div class="card-block block-2">
+							<h4 class="card-title">SERVICE TITLE 2</h4><br>
+							<p class="card-text">With supporting text below as a natural lead-in to additional content.
+								With supporting text below as a natural lead-in to additional content.
+								With supporting text below as a natural lead-in to additional content.
+								With supporting text below as a natural lead-in to additional content.
+							</p>
+							<a href="#" title="Read more" class="read-more" >Read more<i class="fa fa-angle-double-right ml-2"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+					<div class="card">
+						<div class="card-block block-3">
+							<h4 class="card-title">SERVICE TITLE 3</h4><br>
+							<p class="card-text">With supporting text below as a natural lead-in to additional content.
+								With supporting text below as a natural lead-in to additional content.
+								With supporting text below as a natural lead-in to additional content.
+								With supporting text below as a natural lead-in to additional content.
+							</p>
+							<a href="#" title="Read more" class="read-more" >Read more<i class="fa fa-angle-double-right ml-2"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>	
+	</section>
+	<!-- /Services section ends -->
+	
+	<!-- /Team section -->
+	<section id="team" class="our-webcoderskull padding-lg">
+  <div class="container">
+    <div class="row heading heading-icon">
+        <h2 class="section-title">Our Team</h2>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-3 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 340px;">
+            <figure><img src="team1.png" class="img-responsive" alt=""></figure>
+            <h3><a href="">Aditya</a></h3>
+            <p>Android Developer</p>
+          </div>
+      </div>
+      <div class="col-12 col-md-3 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 340px;">
+            <figure><img src="team2.png" class="img-responsive" alt=""></figure>
+            <h3><a href="#">Virat </a></h3>
+            <p>Frontend Developer</p>
+          </div>
+      </div>
+      <div class="col-12 col-md-3 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 340px;">
+            <figure><img src="team3.png" class="img-responsive" alt=""></figure>
+            <h3><a href="#">Manish </a></h3>
+            <p>Backend Developer</p>
+          </div>
+       </div>
+      <div class="col-12 col-md-3 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 340px;">
+            <figure><img src="team4.png" class="img-responsive" alt=""></figure>
+            <h3><a href="#">Atul </a></h3>
+            <p>Software Developer</p>
+          </div>
+      </div>
+   
+  </div>
+</section>
+	<!-- /Team section ends-->
+	
+	<!-- Blog Section -->
+	<section id="blog" style="background-color:#F8F8F8">
+		<div class="container">
+			<div class="row heading heading-icon">
+				<h2 class="section-title">BLOGS</h2>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<div class="card">
+						<img class="card-img-top img-responsive" src="blog1.jpg" alt="Card image" >
+						<div class="card-body">
+						  <h4 class="card-title">John Doe</h4>
+						  <p class="card-text">Some example text some example text. John Doe is an architect and engineer.
+						  Some example text some example text.</p>
+						 <a href="#" title="Read more" class="read-more" >Read more<i class="fa fa-angle-double-right ml-2"></i></a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<div class="card">
+						<img class="card-img-top img-responsive" src="blog3.jpg" alt="Card image">
+						<div class="card-body">
+						  <h4 class="card-title">John Doe</h4>
+						  <p class="card-text">Some example text some example text. John Doe is an architect and engineer.
+						  Some example text some example text.</p>
+						  <a href="#" title="Read more" class="read-more" >Read more<i class="fa fa-angle-double-right ml-2"></i></a>
+						</div>
+					</div>
+				</div>
+			</div><br><br>
+		</div>	
+    
+	</section>
+	<!-- Blog Section End-->
+	
+	<!-- Form for subscription -->
+	<section>
+		<div class="container">
+		<div class="row heading heading-icon"><h2></h2></div>	
+			<form class="form-horizontal" action="" method="post" name="myForm" onsubmit="return validateForm()">
+				<div class="form-group form-group-sm">
+					<label class="col-sm-2 control-label" for="sm"></label>
+					<div class="col-sm-6">
+					<input type="email" class="form-control" id="email" placeholder="Enter Email " name="email" required></div>
+					<div class="col-sm-4">
+					<button type="submit" class="btn btn-success" value="submit" id="subscribe_btn">Subscribe to Newsletter</button></div>
+				</div>
+			</form>
+		</div>
+	</section><hr>
+	
+	
+		<div class="container">
+			<div class="footer">
+				<p style="font-size:15px;text-align:center;padding:7px;">Copyright &copy; <script>document.write(new Date().getFullYear())</script>&nbsp;&nbsp;Designed By Your Name .All Rights Reserved</p>
+			</footer>
+		</div>
+	
+	<!-- Form for subscription Ends -->
+	<script>
+	function myFunction() {
+	  var x = document.getElementById("myTopnav");
+	  if (x.className === "topnav") {
+		x.className += " responsive";
+	  } else {
+		x.className = "topnav";
+	  }
+	}
+	
+	
+	
+	// Add active class to the current navbar
+var header = document.getElementById("myTopnav");
+var btns = header.getElementsByClassName("nav");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  if (current.length > 0) { 
+    current[0].className = current[0].className.replace(" active", "");
+  }
+  this.className += " active";
+  });
+}
+
+
+	</script>
+	</body>
+</html>
